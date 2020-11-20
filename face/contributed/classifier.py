@@ -147,14 +147,14 @@ def parse_arguments(argv):
         'model should be used for classification', default='TRAIN')
     # defualt : None -> '/home/team/test/ttt/face/capture'
     parser.add_argument('data_dir', type=str,
-        help='Path to the data directory containing aligned LFW face patches.', default='/home/team/test/ttt/face/capture')
+        help='Path to the data directory containing aligned LFW face patches.', default='C:/Repository/face_recognition_web/face/capture')
     # defualt : None -> '/home/team/models/20180402-114759/20180402-114759.pb'
     parser.add_argument('model', type=str, 
-        help='Could be either a directory containing the meta_file and ckpt_file or a model protobuf (.pb) file', default='/home/team/models/20180402-114759/20180402-114759.pb')
+        help='Could be either a directory containing the meta_file and ckpt_file or a model protobuf (.pb) file', default='C:/Repository/face_recognition_web/models/20180402-114759/20180402-114759.pb')
     # defualt : None -> '/home/team/test/ttt/face/classifier/rasp_classifier.pkl'
     parser.add_argument('classifier_filename', 
         help='Classifier model file name as a pickle (.pkl) file. ' + 
-        'For training this is the output and for classification this is an input.', default='/home/team/test/ttt/face/classifier/rasp_classifier.pkl')
+        'For training this is the output and for classification this is an input.', default='C:/Repository/face_recognition_web/face/classifier/rasp_classifier.pkl')
     parser.add_argument('--use_split_dataset', 
         help='Indicates that the dataset specified by data_dir should be split into a training and test set. ' +  
         'Otherwise a separate test set can be specified using the test_data_dir option.', action='store_true')

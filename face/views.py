@@ -326,7 +326,8 @@ def classifier(request):
 
     # clfassify를 시스템 실행하여 새로운 분류기 피클을 생성한다.
     # os.system('python ./face/classifier.py TRAIN ./face/capture/ /home/team/models/20180402-114759/20180402-114759.pb ./face/classifier/rasp_classifier.pkl --batch_size 1000') # VGG model
-    os.system('python ./face/classifier.py TRAIN ./face/capture/ /home/team/models/facenet/celeb_kface/20200609-161902 ./face/classifier/rasp_classifier.pkl --batch_size 1000') # 전이학습 모델
+    # os.system('python ./face/classifier.py TRAIN ./face/capture/ /home/team/models/facenet/celeb_kface/20200609-161902 ./face/classifier/rasp_classifier.pkl --batch_size 1000') # 전이학습 모델
+    os.system('python ./face/classifier.py TRAIN ./face/capture/ C:/Repository/face_recognition_web/models/20180402-114759 ./face/classifier/rasp_classifier.pkl --batch_size 1000') # modified2
 
     # 업데이트 중이라는 메세지를 남긴다.
     # 분류기 업데이트가 완료되면 페이지를 새로 고침한다.

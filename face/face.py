@@ -29,22 +29,24 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-import pickle
-import os
 
-import cv2
-import numpy as np
 # import tensorflow.compat.v1 as tf # Modified
 # tf.disable_v2_behavior()
 import tensorflow as tf # Original
+import os
+import cv2
+import pickle
+import numpy as np
 from scipy import misc
 from . import detect_face # Original
+from . import facenet # Original
+# import detect_face # modified2
+# import facenet # modified2
 
 # import align.detect_face # Original
 # import src.align.detect_face # Modified
 # import src.facenet # Modified
 
-from . import facenet # Original
 
 gpu_memory_fraction = 0.3
 
@@ -55,10 +57,14 @@ gpu_memory_fraction = 0.3
 # 20180402-114759 
 
 # facenet_model_checkpoint = "/home/team/models//" # Modified
-facenet_model_checkpoint = "/home/team/models/facenet/celeb_kface/20200609-161902/" # Modified
+# facenet_model_checkpoint = "/home/team/models/facenet/celeb_kface/20200609-161902/" # Modified
+facenet_model_checkpoint = "C:/Repository/face_recognition_web/models/20180402-114759" # Modified
 # estimator_model_checkpoint = "/home/team/test/ttt/face/pb_age_gender_60_98.pb" # add Age, Gender
-estimator_model_checkpoint = "/home/team/test/ttt/face/pb_age_gender_0612.pb" # add Age, Gender
-classifier_model = "/home/team/test/ttt/face/classifier/rasp_classifier.pkl" # Modified
+# estimator_model_checkpoint = "/home/team/test/ttt/face/pb_age_gender_0612.pb" # add Age, Gender
+estimator_model_checkpoint = "C:/Repository/face_recognition_web/face/pb_age_gender_0612.pb" # add Age, Gender
+# classifier_model = "/home/team/test/ttt/face/classifier/rasp_classifier.pkl" # Modified
+# classifier_model = "C:/Repository/face_recognition_web/face/classifier/rasp_classifier.pkl" # Modified
+classifier_model = "C:/Repository/face_recognition_web/face/classifier/rasp_classifier.pkl" # Modified
 debug = False
 
 # Face 클래스에 담기는 정보 = [이름, bounding_box, image, container_image, embedding값, 정확도]

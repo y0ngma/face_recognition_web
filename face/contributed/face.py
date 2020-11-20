@@ -53,8 +53,10 @@ gpu_memory_fraction = 0.3
 # facenet_model_checkpoint = os.path.dirname(__file__) + "/../model_checkpoints/20170512-110547" # Original
 # classifier_model = os.path.dirname(__file__) + "/../model_checkpoints/my_classifier_1.pkl" # Original
 # 20180402-114759 
-facenet_model_checkpoint = "/home/team/models/20180402-114759/" # Modified
-classifier_model = "/home/team/models/classifier/my_classifier20p.pkl" # Modified
+# facenet_model_checkpoint = "/home/team/models/20180402-114759/" # Modified
+facenet_model_checkpoint = "C:/Repository/face_recognition_web/models/20180402-114759" # Modified2
+# classifier_model = "/home/team/models/classifier/my_classifier20p.pkl" # Modified
+classifier_model = "C:/Repository/face_recognition_web/face/classifier/rasp_classifier.pkl" # Modified
 debug = False
 
 # Face 클래스에 담기는 정보 = [이름, bounding_box, image, container_image, embedding값, 정확도]
