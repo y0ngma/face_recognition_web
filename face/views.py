@@ -18,7 +18,7 @@ from . import face
 import pandas as pd
 import psycopg2
 # conn_string = "host='192.168.0.59' dbname ='testdb' user='user' password='password'"
-conn_string = "host='192.168.0.59' dbname ='face_db' user='user' password='password'"
+conn_string = "host='127.0.0.1' dbname ='face_db' user='postgres' password='1234' port=5432"
 conn = psycopg2.connect(conn_string)
 cur = conn.cursor()
 

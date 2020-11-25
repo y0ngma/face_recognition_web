@@ -3,7 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from face.models import Customers, Menus, Sales
 import psycopg2
-conn_string = "host='192.168.0.59' dbname ='face_db' user='user' password='password'"
+conn_string = "host='127.0.0.1' dbname ='face_db' user='postgres' password='1234'"
 conn = psycopg2.connect(conn_string)
 cur = conn.cursor()
 

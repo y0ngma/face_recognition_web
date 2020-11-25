@@ -92,9 +92,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'face_db',
-        'USER': 'user',
-        'PASSWORD': 'password',
-        'HOST': '192.168.0.59',
+        'USER': 'postgres',
+        'PASSWORD': '1234',
+        'HOST': '127.0.0.1',
         'PORT': '5432',
     }
 }
